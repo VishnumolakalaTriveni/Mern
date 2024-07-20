@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  </head>
+  <body>
+    <button onclick="balaji()">Click Me</button>
+    <p id="mango">Do u have friend or not?</p>
+  <script>
+    function balaji()
+    {
+      var a;
+      if(confirm("Tell me ur Answer?"))
+      {
+        a="Am waiting for friend";
+      }
+      else
+      {
+        a="no dear,am always solo";
+      }
+      document.getElementById('mango').innerHTML=a;
+    }
+  </script>
+  </body>
+  </html>
