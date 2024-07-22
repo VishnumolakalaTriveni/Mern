@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap </title>
+	<meta charset="utf-8">
+	<meta name="viewport" contents="width=deivce-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	number:<input type="number" id="mynumber" value=""><br>
+	<button onclick="triveni()">click here</button>
+	<p id="para"></p>
+	<script >
+		function triveni()
+		{
+			var a=document.getElementById('mynumber').value;
+			var change=Number(a);
+    		if(Number.isInteger(change))
+			{
+				document.getElemenetById('para').innerHTML="yes";
+			}
+			else
+			{
+				document.getElemenetById('para').innerHTML="no";
+
+			}
+		}
+
+	</script>
+</body>
+</html>
