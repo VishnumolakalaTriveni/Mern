@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap </title>
+	<meta charset="utf-8">
+	<meta name="viewport" contents="width=deivce-width, initial-scale=1">
+	<title></title>     
+</head>
+<body>
+	number:<input type="number" id="lucky number"><br>
+	<button onclick="luckyfunction()">check my number</button>
+	<script>
+		function luckyfunction()
+		{
+			var a = Math.floor(Math.random() * (10- 1)) + 1;                                                                     
+			var b = document.getElementById('lucky number').value;
+			b=Number(b);
+			//document.write(typeof(b));                
+			if(a==b)
+			{
+				alert('am lucky'+a);
+			}
+			else
+			{
+				alert('not lucky'+a);
+		    }
+		 }	
+		
+	</script>
+</body>
+</html>

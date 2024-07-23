@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+<h2>The return Statement</h2>
+
+<p>Call a function that performs a calculation and returns the result:</p>
+<p id="demo"></p>
+<p>Convert from Fahrenheit to Celcius. Change toCelcius(32):</p>
+<p id="demo1"></p>
+
+<script>
+let x = myFunction(4, 3,5); 
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b,c) {
+  return a * b * c;   
+}  
+document.getElementById("demo1").innerHTML = toCelcius(32);
+
+function toCelcius(f) {
+  return (5/9) * (f-32);
+}
+</script>
+
+</body>
+</html>
